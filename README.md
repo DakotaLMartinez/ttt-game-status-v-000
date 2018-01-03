@@ -18,6 +18,20 @@ We'll be building helper methods that introspect and report on the various game 
 
 ### 1. Define WIN_COMBINATIONS
 
+W
+Installing rspec-expectations 3.3.1                                
+Fetching rspec-mocks 3.3.2                                         
+Installing rspec-mocks 3.3.2                                       
+Fetching rspec 3.3.0                                               
+Installing rspec 3.3.0                                             
+Bundle complete! 2 Gemfile dependencies, 11 gems now installed.    
+Use `bundle info [gemname]` to see where a bundled gem is installed
+.                                                                  
+Done.                                                              
+[00:39:41] (master) ttt-game-status-v-000                          
+// ♥                                                               
+
+
 The first method to build is `#won?`. In order for that method to function, it will have to know about all the possible winning combinations of Tic Tac Toe.
 
 Tic Tac Toe has 8 possible ways to win: 3 horizontal rows, 3 vertical columns, and 2 diagonals. The game board is represented by an array, `board = [" ", " ", " ", " ", " ", " ", " ", " ", " ",]`, with 9 positions, indexed from 0-8. You could represent the coordinates of a win condition by referring to their index in the `board`. For example a win in the top horizontal row:
